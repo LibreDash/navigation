@@ -26,6 +26,7 @@
     "vue": "latest"
   },
   "dependencies": {
+    "@indoorequal/vue-maplibre-gl": "^8.2.2",
     "@tresjs/cientos": "^4.1.0",
     "@tresjs/nuxt": "3.0.8",
     "@versatiles/container": "^1.2.5",

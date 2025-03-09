@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@indoorequal/vue-maplibre-gl':
+        specifier: ^8.2.2
+        version: 8.2.2(maplibre-gl@5.2.0)(vue@3.5.13(typescript@5.7.3))
       '@tresjs/cientos':
         specifier: ^4.1.0
         version: 4.1.0(@tresjs/core@4.3.1(three@0.174.0)(vue@3.5.13(typescript@5.7.3)))(@types/three@0.174.0)(three@0.174.0)(typescript@5.7.3)(vue@3.5.13(typescript@5.7.3))
@@ -665,6 +668,13 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       maplibre-gl: ^4.0.0
+      vue: ^3.4.18
+
+  '@indoorequal/vue-maplibre-gl@8.2.2':
+    resolution: {integrity: sha512-m9Ikr3ICLvM0yxCMrg4st5tIcSbocYeOYUHoWD0pri8Nmo+AQ6nPK6BdRLW9GzirqRBoRw4/ZUs8ZitdorBXQQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      maplibre-gl: ^5.0.0
       vue: ^3.4.18
 
   '@ioredis/commands@1.2.0':
@@ -5577,6 +5587,11 @@ snapshots:
   '@indoorequal/vue-maplibre-gl@7.7.1(maplibre-gl@4.7.1)(vue@3.5.13(typescript@5.7.3))':
     dependencies:
       maplibre-gl: 4.7.1
+      vue: 3.5.13(typescript@5.7.3)
+
+  '@indoorequal/vue-maplibre-gl@8.2.2(maplibre-gl@5.2.0)(vue@3.5.13(typescript@5.7.3))':
+    dependencies:
+      maplibre-gl: 5.2.0
       vue: 3.5.13(typescript@5.7.3)
 
   '@ioredis/commands@1.2.0': {}
