@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       include: [
         resolveSync("@indoorequal/vue-maplibre-gl", {
           url: import.meta.url,
-        }).replace("file://", ""),
+        }).replace("file:///", ""),
       ],
     },
   },
