@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   modules: ["nuxt-maplibre", "@tresjs/nuxt"],
   vite: {
     optimizeDeps: {
-      include: ["@indoorequal/vue-maplibre-gl", "maplibre-gl", "three"],
+      include: ["maplibre-gl", "three"],
       force: true,
     },
   },
