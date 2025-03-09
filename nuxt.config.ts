@@ -16,7 +16,9 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: [
-        resolveSync("@indoorequal/vue-maplibre-gl", { url: import.meta.url }),
+        resolveSync("@indoorequal/vue-maplibre-gl", {
+          url: import.meta.url,
+        }).replace("file://", ""),
       ],
     },
   },
