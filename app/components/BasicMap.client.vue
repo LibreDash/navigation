@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { LngLatLike } from "maplibre-gl";
+// import type { LngLatLike } from "maplibre-gl";
 
 const style = useMapStyle();
-const center: LngLatLike = [8.310296009215529, 47.050761999302146];
+const center: [number, number] = [8.310296009215529, 47.050761999302146];
 const zoom = 18;
 </script>
 
