@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolveSync } from "mlly";
-console.log(
-  resolveSync("@indoorequal/vue-maplibre-gl", { url: import.meta.url }),
-);
-console.log(resolveSync("maplibre-gl", { url: import.meta.url }));
+
+const path = resolveSync("@indoorequal/vue-maplibre-gl", {
+  url: import.meta.url,
+});
+const test = path.replace("file:///", "");
+console.log(test);
 
 export default defineNuxtConfig({
   extends: [["github:LibreDash/core", { install: true }]],
@@ -16,14 +18,13 @@ export default defineNuxtConfig({
   modules: ["nuxt-maplibre", "@tresjs/nuxt"],
   vite: {
     optimizeDeps: {
-      include: [
-        resolveSync("@indoorequal/vue-maplibre-gl", {
-          url: import.meta.url,
-        }).replace("file:///", ""),
-        resolveSync("maplibre-gl", {
-          url: import.meta.url,
-        }).replace("file:///", ""),
-      ],
+      // exclude: ["@indoorequal/vue-maplibre-gl"],
+      // include: [
+      //   resolveSync("@indoorequal/vue-maplibre-gl", {
+      //     url: import.meta.url,
+      //   }).replace("file:///", ""),
+      // ],
+      include: ["@indoorequal/vue-maplibre-gl"],
     },
   },
 });
