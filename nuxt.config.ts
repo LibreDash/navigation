@@ -3,6 +3,7 @@ import { resolveSync } from "mlly";
 console.log(
   resolveSync("@indoorequal/vue-maplibre-gl", { url: import.meta.url }),
 );
+console.log(resolveSync("maplibre-gl", { url: import.meta.url }));
 
 export default defineNuxtConfig({
   extends: [["github:LibreDash/core", { install: true }]],
@@ -17,6 +18,9 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: [
         resolveSync("@indoorequal/vue-maplibre-gl", {
+          url: import.meta.url,
+        }).replace("file:///", ""),
+        resolveSync("maplibre-gl", {
           url: import.meta.url,
         }).replace("file:///", ""),
       ],
