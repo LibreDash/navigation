@@ -3,7 +3,7 @@ export default defineAppConfig({
     {
       id: "navigation",
       name: "Navigation",
-      icon: "/app/icons/navigation.png",
+      icon: "/app/icons/navigation.svg",
       entry: "/app/navigation",
     },
   ],
