@@ -8,4 +8,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ["nuxt-maplibre", "@tresjs/nuxt"],
+  vite: {
+    optimizeDeps: {
+      include: ["maplibre-gl", "three"],
+    },
+  },
 });
