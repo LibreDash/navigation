@@ -11,6 +11,10 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ["maplibre-gl", "three"],
+      force: true,
     },
+  },
+  build: {
+    transpile: ["maplibre-gl"],
   },
 });
