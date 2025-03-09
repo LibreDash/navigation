@@ -1,0 +1,17 @@
+{
+  "geist": {
+    "name": "Geist",
+    "fontFace": {
+      "geist-regular": {
+        "name": "Regular",
+        "italic": false,
+        "weight": 400
+      },
+      "geist-thin": {
+        "name": "Bold",
+        "italic": false,
+        "weight": 700
+      }
+    }
+  }
+}
